@@ -114,15 +114,13 @@ else:
         <h2>⏰ Time to get back to work.</h2>
     </div>
     """, unsafe_allow_html=True)
-
-    st.markdown(f"<h3 style='text-align:center; margin-top: 30px;'>{get_random_quote()}</h3>", unsafe_allow_html=True)
     st.markdown(get_alert_sound_html(), unsafe_allow_html=True)
 
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        if st.button("Start Another Break"):
+        if st.button("Byeeeeeeeeeeee"):
             st.session_state.accepted = False  # Go back to welcome page
-            st.rerun()
+            st.exit()
 
 st.markdown("---")
 st.markdown("### Made with love for my baby kutty")
